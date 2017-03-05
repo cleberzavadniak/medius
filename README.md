@@ -1,5 +1,7 @@
 # Medius
 
+[![CircleCI](https://circleci.com/gh/cleberzavadniak/medius/tree/master.svg?style=svg)](https://circleci.com/gh/cleberzavadniak/medius/tree/master)
+
 A decent and easy Medium API client for Python.
 
 I create this project because I found the official Medium
