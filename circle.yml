@@ -11,4 +11,4 @@ test:
       - flake8 -v --ignore=E501 medius tests
 
     override:
-        - py.test -x -vvv
+        - PYTHONPATH="." py.test -x -vvv
