@@ -1,0 +1,14 @@
+machine:
+    python:
+        version: 3.6.0
+
+dependencies:
+    pre:
+        - pip install -U -r requirements/test.txt
+
+test:
+    pre:
+      - flake8 -v --ignore=E501 medius tests
+
+    override:
+        - py.test -x -vvv
