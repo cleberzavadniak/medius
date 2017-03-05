@@ -21,9 +21,6 @@ from medius.client import Client
 # In this example, we get the access token from an environment variable:
 client = Client(os.environ['MEDIUM_ACCESS_TOKEN'])
 
-# List posts:
-posts = client.get('posts')
-
 post_data = {
     'title': 'Post Title',
     'content': '<p>Post content</p>',
