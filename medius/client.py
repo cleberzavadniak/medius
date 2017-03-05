@@ -80,7 +80,6 @@ class Client:
         format_args = dict(self.default_kwargs)
         format_args.update(kwargs)
         path = self.base_url + (resource['path'].format(**format_args))
-        print('path:', path)
 
         requests_method = self.requests_methods[method]
 
