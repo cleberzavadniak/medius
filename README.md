@@ -15,7 +15,7 @@ into the Client and change whatever you need.
 
 ## Usage
 
-```
+```python
 from medius.client import Client
 
 # In this example, we get the access token from an environment variable:
