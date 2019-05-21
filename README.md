@@ -6,7 +6,7 @@ A decent and easy Medium API client for Python.
 
 I create this project because I found the official Medium
 SDK for Python badly written and not covering all the endpoints of the
-API. Sorry, "official guys", but that's the true... And I wanted something
+API. Sorry, "official guys", but that's the truth... And I wanted something
 really simple to use, intended for programatic access first and obeying
 a very simple interface.
 
