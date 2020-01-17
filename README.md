@@ -6,20 +6,24 @@ A decent and easy Medium API client for Python.
 
 I create this project because I found the official Medium
 SDK for Python badly written and not covering all the endpoints of the
-API. Sorry, "official guys", but that's the true... And I wanted something
-really simple to use, intended for programatic access first and obeying
+API (sorry, Medium team, that's the truth...). And I wanted something
+really simple to use, intended for programatic access first through
 a very simple interface.
 
 It **is** opinionated but, at least, it's easy to hack
-into the Client and change whatever you need.
+into the Client class and change whatever you need.
+
+## Install
+
+    pip install -U 'git+https://github.com/cleberzavadniak/medius.git'
 
 ## Usage
 
 ```python
+from os import getenv
 from medius.client import Client
 
-# In this example, we get the access token from an environment variable:
-client = Client(os.environ['MEDIUM_ACCESS_TOKEN'])
+client = Client(getenv('MEDIUM_ACCESS_TOKEN))
 
 post_data = {
     'title': 'Post Title',
@@ -43,17 +47,7 @@ content, the way most people do in the online editor.
 
 ## Listings
 
-*Medium* API is not very rich in terms of listing things, so I found most
+*Medium* API is not very rich in terms of listing things, so I found that most
 of the GETs on the endpoints will return `404 Not Found` errors, even when
 you are sure there is something that should be listed. It's not Medius
-Client fault (I believe).
-
-## A message for Medium
-
-I like Medium very much and I'm sad both the API and the Python SDK are
-"less than optimal" the way they are. If you ever want to work into
-a `/v2/`, let me know. I would be very glad to help. ;-)
-
-## Requirements
-
- * `requests` module;
+Client fault.
